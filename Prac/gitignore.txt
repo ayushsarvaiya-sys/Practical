@@ -1,0 +1,107 @@
+# Build Folders
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code settings
+.vscode/
+
+# Rider IDE settings
+.idea/
+*.sln.iml
+
+# Visual Studio settings
+.vs/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Test results
+TestResults/
+*.trx
+
+# Package folders
+packages/
+*.nupkg
+*.snupkg
+
+# dotCover
+.idea/.idea.DotSettings
+
+# Publish output
+publish/
+app.publish/
+
+# Secrets and environment settings
+.env
+*.secrets.json
+secrets.json
+appsettings.Development.json
+appsettings.Local.json
+
+# Docker
+*.pid
+docker-compose.override.yml
+docker-compose.*.yml
+Dockerfile.*
+**/docker-compose*
+
+# Node modules (if using JS/TS frontend inside backend repo)
+node_modules/
+dist/
+
+# Backup & temp files
+*.bak
+*.tmp
+*.swp
+*.orig
+
+# Coverage files
+coverage/
+*.coverage
+*.coveragexml
+*.lcov
+
+# JetBrains Rider logs
+.idea/
+*.sln.iml
+
+# Azure Pipelines
+.azure-pipelines/
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# dotnet watch
+*.dotnet-watch.json
+
+# Entity Framework
+Migrations/
+
+# Git ignore for database (optional)
+*.mdf
+*.ldf
+
+# Tye
+.tye/
+
+# Web config (optional, if deploying differently)
+web.config
+web.Debug.config
+web.Release.config
+
+# Others
+DumpStack.log
