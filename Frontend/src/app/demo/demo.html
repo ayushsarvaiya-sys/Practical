@@ -1,0 +1,23 @@
+<div class="demo-container">
+  <h2>Weather Forecast Demo</h2>
+
+  <button (click)="fetchWeatherForecast()" [disabled]="loading()">
+    {{ loading() ? 'Loading...' : 'Refresh' }}
+  </button>
+
+  <div *ngIf="error()" class="error">
+    {{ error() }}
+  </div>
+
+  <div *ngIf="weatherData().length > 0" class="weather-list">
+    <div *ngFor="let item of weatherData()" class="weather-item">
+      <h3>{{ item.date }}</h3>
+      <p><strong>Temperature:</strong> {{ item.temperatureC }}°C / {{ item.temperatureF }}°F</p>
+      <p><strong>Summary:</strong> {{ item.summary }}</p>
+    </div>
+  </div>
+
+  <div *ngIf="!loading() && weatherData().length === 0 && !error()" class="no-data">
+    No data available. Click refresh to load.
+  </div>
+</div>

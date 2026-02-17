@@ -1,0 +1,16 @@
+<h1 style="text-align: center;">Multi Client File Upload Progress</h1>
+
+<div *ngFor="let u of uploads">
+  <p><strong>{{u.FileName}}</strong></p>
+
+  <div style="width:300px;border:1px solid #000000">
+    <div
+      [style.width.%]="u.Progress"
+      style="background:green;color:white">
+      {{u.Progress}}%
+    </div>
+  </div>
+
+  <p>Status: {{u.Status}}</p>
+  <hr>
+</div>
